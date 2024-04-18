@@ -1,0 +1,54 @@
+/*
+=================================================
+SEARCH
+=================================================
+*/
+form{
+    width: 100%;
+    max-width:600px;
+    margin:0 auto;
+ }
+ input{
+    width:100%;
+    font-size:32px;
+    margin:5px 0;
+    float:left;
+    border:none;
+    padding:10px;
+    outline:none;
+ }
+ .search-bar{
+    width:100%;
+ }
+ .submit-button{
+    width:50%;
+    background:#000;
+    color:#FFF;
+ }
+
+/*
+=================================================
+BACKGROUND
+=================================================
+*/
+body{
+   background: rgb(179,194,106);
+   background: linear-gradient(32deg, rgba(179,194,106,1) 0%, rgba(58,64,25,1) 100%);
+}
+
+/*
+=================================================
+IMAGES
+=================================================
+*/
+.dot{
+   height: 175px;
+   width: 175px;
+   border:5px solid black;
+   background-image:url('maus.jpg');
+   background-size:100%;
+   border-radius: 50%;
+   display: inline-block;
+   position:relative;
+   top:-100px;
+ }
