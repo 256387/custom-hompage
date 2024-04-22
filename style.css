@@ -32,6 +32,7 @@ BACKGROUND
 =================================================
 */
 body{
+   height: 100%;
    background: rgb(179,194,106);
    background: linear-gradient(32deg, rgba(179,194,106,1) 0%, rgba(58,64,25,1) 100%);
 }
