@@ -18,38 +18,115 @@ form{
     outline:none;
  }
  .search-bar{
-    width:100%;
+    width:50%;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
  }
  .submit-button{
-    width:50%;
+    width:25%;
     background:#000;
     color:#FFF;
- }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
 
 /*
 =================================================
 BACKGROUND
 =================================================
 */
-body{
+
+html{
    height: 100%;
+}
+body{
    background: rgb(179,194,106);
    background: linear-gradient(32deg, rgba(179,194,106,1) 0%, rgba(58,64,25,1) 100%);
 }
 
 /*
 =================================================
-IMAGES
+BOOKMARKS
 =================================================
 */
-.dot{
-   height: 175px;
-   width: 175px;
-   border:5px solid black;
-   background-image:url('maus.jpg');
-   background-size:100%;
-   border-radius: 50%;
-   display: inline-block;
-   position:relative;
-   top:-100px;
- }
+body, html {
+   height: 100%; /* Ensure body and html take up full height */
+   margin: 0; /* Remove default margin */
+}
+
+.container {
+   display: flex;
+   justify-content: center; /* Horizontally center the bookmarks */
+   align-items: center; /* Vertically center the bookmarks */
+   height: 100%; /* Make the container take up full height of the viewport */
+}
+
+.bookmarks {
+   padding: 30px;
+}
+
+.bookmarks a {
+   text-decoration: none;
+}
+
+.bookmarks i {
+   font-size: 42px;
+   margin: 0 20px;
+   color: gold;
+   transition: .15s;
+   vertical-align: top;
+}
+
+.bookmarks i:hover {
+   font-size: 72px;
+   position: relative;
+}
+
+/*
+=================================================
+CLOCK
+=================================================
+*/
+.clock {
+   position: fixed;
+   bottom: 10px; /* Adjust as needed */
+   right: 10px; /* Adjust as needed */
+   background-color: lightskyblue;
+   color: #000;
+   padding: 10px;
+   font-size: 20px;
+   border: 1px solid #000;
+   border-radius: 5px;
+}
+
+/*
+=================================================
+POST-IT NOTE (IN CSS)
+=================================================
+*/
+#note{
+   width:250px;
+   height:250px;
+   resize: none;
+   background:#F3F19D;
+   padding:15px;
+   border:none;
+   position: absolute;
+   bottom:50px;
+   left:50px;
+   font-family:sans-serif;
+  }
+  
+/*
+=================================================
+TITLE
+=================================================
+*/
+h1{
+   margin-top: 150px;
+   text-align: center;
+}
