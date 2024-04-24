@@ -46,6 +46,7 @@ html{
 body{
    background: rgb(179,194,106);
    background: linear-gradient(32deg, rgba(179,194,106,1) 0%, rgba(58,64,25,1) 100%);
+   text-align: center;
 }
 
 /*
@@ -53,38 +54,26 @@ body{
 BOOKMARKS
 =================================================
 */
-body, html {
-   height: 100%; /* Ensure body and html take up full height */
-   margin: 0; /* Remove default margin */
-}
-
-.container {
-   display: flex;
-   justify-content: center; /* Horizontally center the bookmarks */
-   align-items: center; /* Vertically center the bookmarks */
-   height: 100%; /* Make the container take up full height of the viewport */
-}
-
-.bookmarks {
-   padding: 30px;
-}
-
-.bookmarks a {
+.bookmarks a{
    text-decoration: none;
 }
-
-.bookmarks i {
-   font-size: 42px;
-   margin: 0 20px;
-   color: gold;
-   transition: .15s;
+.bookmarks{
+   margin-top: -80px;
+   padding:30px;
+   clear:both;
+}
+.bookmarks i{
+   font-size:42px;
+   margin:0 20px;
+   color:#D4AF37;
+   transition:.15s;
    vertical-align: top;
 }
-
-.bookmarks i:hover {
-   font-size: 72px;
-   position: relative;
+.bookmarks i:hover{
+   font-size:72px;
+   position:relative;
 }
+
 
 /*
 =================================================
@@ -105,7 +94,7 @@ CLOCK
 
 /*
 =================================================
-POST-IT NOTE (IN CSS)
+POST-IT NOTE
 =================================================
 */
 #note{
@@ -129,4 +118,12 @@ TITLE
 h1{
    margin-top: 150px;
    text-align: center;
-}
+   font-family: "Goblin One", serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 90px;
+    }
+    
+
+    
+ 

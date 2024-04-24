@@ -41,3 +41,41 @@ if (localStorage["note"]) {
     }
  }
  
+ You can achieve this by using JavaScript to show and hide the calculator when a button is clicked. Here's how you can do it:
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator Toggle</title>
+<style>
+  #calculator-container {
+    display: none; /* Hide the calculator initially */
+  }
+</style>
+</head>
+<body>
+
+<button onclick="toggleCalculator()">Toggle Calculator</button>
+
+<div id="calculator-container">
+  <iframe id="calculator-frame" width="219" height="302" src="http://calculator-1.com/outdoor/?f=0274C8&r=666666" scrolling="no" frameborder="0"></iframe><br />
+  <a href="https://calculator-1.com/">The Best Free Online Calculator - Calculator-1.com</a>
+</div>
+
+<script>
+  function toggleCalculator() {
+    var calculatorContainer = document.getElementById("calculator-container");
+    if (calculatorContainer.style.display === "none") {
+      calculatorContainer.style.display = "block"; // Show the calculator
+    } else {
+      calculatorContainer.style.display = "none"; // Hide the calculator
+    }
+  }
+</script>
+
+</body>
+</html>
